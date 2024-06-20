@@ -6,6 +6,7 @@ AcademiaEase is an innovative management system designed to streamline the admin
 1. [Installation](#installation)
 2. [License](#license)
 3. [Features](#features)
+4. [Version](#version)
 ## Installation
 1. Close this repository and navigate to the project directory.
 2. Create your own SQL database throughout SQL Server Management Studio and change the link of connection in the DatabaseConnection.java file to your own database. You can also find the ER diagram and schema relation diagram attached in the documentation file, above.
@@ -18,4 +19,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Payment Management: Secure and efficient processing of tuition fees, scholarships, and other financial transactions, ensuring accurate tracking and reporting payments.
 - User-Friendly Interface: An inuitive interface designed to ensure ease of use for adminstrators, professors, and students alike.
 - Robust Database: A reliable and scalable database that ensures data integrity, security, and quick access to information.
+## Version
+v1.0
 
