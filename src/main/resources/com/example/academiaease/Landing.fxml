@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="LandingPage" maxHeight="720.0" maxWidth="1200.0" minHeight="720.0" minWidth="1200.0" prefHeight="720.0" prefWidth="1200.0" stylesheets="@CSSStyling/Landing.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academiaease.LandingController">
+   <children>
+      <AnchorPane fx:id="TopForm" layoutY="-1.0" prefHeight="55.0" prefWidth="1200.0" styleClass="top-form" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="GRADUATION_CAP" layoutX="14.0" layoutY="40.0" size="3em" wrappingWidth="56.0" AnchorPane.bottomAnchor="9.85714340209961" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.14285659790039" />
+            <Label layoutX="72.0" layoutY="12.0" styleClass="academiaease" stylesheets="@CSSStyling/Landing.css" text="AcademiaEase" textFill="WHITE" />
+            <Button fx:id="closeButton" layoutX="1146.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="55.0" prefWidth="55.0" styleClass="close-button" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" />
+               </graphic>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="1088.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="55.0" prefWidth="55.0" styleClass="min-button" stylesheets="@CSSStyling/Landing.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="MINUS" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LeftForm" layoutY="59.0" prefHeight="661.0" prefWidth="315.0" styleClass="left-form" stylesheets="@CSSStyling/Landing.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <Label alignment="CENTER" layoutX="76.0" layoutY="175.0" prefWidth="150.0" styleClass="welcome-label" stylesheets="@CSSStyling/Landing.css" text="Welcome, Usama" textAlignment="CENTER" />
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" layoutX="83.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@Images/Photo-modified.png" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="157.0" layoutY="205.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="HomeButton" layoutX="34.0" layoutY="222.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text=" Home">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="2em" text="" />
+               </graphic>
+            </Button>
+            <Button fx:id="StudentButton" layoutX="34.0" layoutY="279.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text=" Student Affairs" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="279.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" />
+               </graphic>
+            </Button>
+            <Button fx:id="ManageButton" layoutX="35.0" layoutY="344.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text=" Professors Affairs" AnchorPane.leftAnchor="34.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="2em" />
+               </graphic>
+            </Button>
+            <Button fx:id="SignOutButton" layoutX="34.0" layoutY="595.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text="Sign Out" AnchorPane.leftAnchor="34.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="2em" />
+               </graphic>
+            </Button>
+            <Button fx:id="CourseButton" layoutX="28.0" layoutY="405.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text="Courses &amp; Classrooms" AnchorPane.leftAnchor="34.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="GRADUATION_CAP" size="2em" wrappingWidth="42.0" />
+               </graphic></Button>
+            <Button fx:id="PaymentButton" layoutX="34.0" layoutY="465.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="52.0" prefWidth="247.0" styleClass="left-form-buttons" stylesheets="@CSSStyling/Landing.css" text=" Payment &amp; Costs" AnchorPane.leftAnchor="34.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="" size="2em" text="" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Home" layoutX="319.0" layoutY="60.0" prefHeight="603.0" prefWidth="839.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="46.0" prefHeight="200.0" prefWidth="279.0" styleClass="first-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="111.0" size="5em" />
+                  <Label layoutX="21.0" layoutY="161.0" text="Total Enrolled Students" textFill="WHITE" />
+                  <Label fx:id="totalstudents" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="300.0" layoutY="46.0" prefHeight="200.0" prefWidth="279.0" styleClass="second-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="MALE" layoutX="23.0" layoutY="112.0" size="5em" />
+                  <Label layoutX="21.0" layoutY="161.0" text="Total Male Students" textFill="WHITE" />
+                  <Label fx:id="totalmale" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="592.0" layoutY="46.0" prefHeight="200.0" prefWidth="279.0" styleClass="third-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="FEMALE" layoutX="23.0" layoutY="112.0" size="5em" />
+                  <Label layoutX="21.0" layoutY="161.0" text="Total Female Students" textFill="WHITE" />
+                  <Label fx:id="totalfemale" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="323.0" prefHeight="200.0" prefWidth="279.0" styleClass="fourth-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="GRADUATION_CAP" layoutX="23.0" layoutY="112.0" size="5em" />
+                  <Label layoutX="16.0" layoutY="161.0" text="Total Number of Professors" textFill="WHITE" />
+                  <Label fx:id="totalprofessors" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="592.0" layoutY="323.0" prefHeight="200.0" prefWidth="279.0" styleClass="sixth-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="GRADUATION_CAP" layoutX="23.0" layoutY="112.0" size="5em" />
+                  <Label layoutX="16.0" layoutY="161.0" text="Total Departments" textFill="WHITE" />
+                  <Label fx:id="totaldepartments" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="300.0" layoutY="323.0" prefHeight="200.0" prefWidth="279.0" styleClass="fifth-card" stylesheets="@CSSStyling/Landing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="MALE" layoutX="23.0" layoutY="112.0" size="5em" />
+                  <Label layoutX="21.0" layoutY="161.0" text="Total Courses" textFill="WHITE" />
+                  <Label fx:id="totalcourses" layoutX="227.0" layoutY="67.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ManageStudent" layoutX="329.0" layoutY="59.0" prefHeight="603.0" prefWidth="839.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <TextField layoutX="11.0" layoutY="5.0" prefHeight="42.0" prefWidth="350.0" promptText="     Search" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="11.0" />
+            <FontAwesomeIcon fill="#2a3542" glyphName="SEARCH" layoutX="35.0" layoutY="33.0" selectionFill="#2a3542" size="1.5em" text="" />
+            <TableView fx:id="addStudents_tableView" layoutX="17.0" layoutY="53.0" onMouseClicked="#addStudentsSelect" prefHeight="193.0" prefWidth="847.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="17.0">
+              <columns>
+                <TableColumn fx:id="col_first_name" prefWidth="129.0" text="First Name" />
+                <TableColumn fx:id="col_last_name" prefWidth="96.0" text="Last Name" />
+                  <TableColumn fx:id="col_department_name" prefWidth="165.0" text="Department" />
+                  <TableColumn fx:id="col_course_name" prefWidth="143.0" text="Course" />
+                  <TableColumn fx:id="col_birthdate" prefWidth="160.0" text="Birth Date" />
+                  <TableColumn fx:id="col_gender" prefWidth="150.0" text="Gender" />
+              </columns>
+            </TableView>
+            <Label layoutX="18.0" layoutY="267.0" prefHeight="35.0" prefWidth="90.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="First Name" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="267.0" />
+            <TextField fx:id="StudentFirstName" layoutX="106.0" layoutY="267.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="106.0" AnchorPane.topAnchor="267.0" />
+            <Label layoutX="441.0" layoutY="269.0" prefHeight="35.0" prefWidth="160.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Parent's First Name" AnchorPane.leftAnchor="441.0" AnchorPane.rightAnchor="276.0" AnchorPane.topAnchor="269.0" />
+            <TextField fx:id="ParentFirstName" layoutX="571.0" layoutY="267.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="267.0" />
+            <Label layoutX="401.0" layoutY="371.0" prefHeight="35.0" prefWidth="150.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Phone Number" AnchorPane.leftAnchor="441.0" AnchorPane.topAnchor="369.0" />
+            <TextField fx:id="ParentPhoneNumber" layoutX="571.0" layoutY="369.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="369.0" />
+            <Button alignment="CENTER" layoutX="264.0" layoutY="579.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Delete" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="264.0" AnchorPane.topAnchor="577.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="delete-button" />
+               </styleClass>
+            </Button>
+            <Button layoutX="518.0" layoutY="577.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Add" AnchorPane.bottomAnchor="34.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="add-button" />
+               </styleClass>
+            </Button>
+            <Label layoutX="18.0" layoutY="367.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Department" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="367.0" />
+            <Label layoutX="15.0" layoutY="423.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Course" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="423.0" />
+            <Label layoutX="378.0" layoutY="432.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Relation" AnchorPane.leftAnchor="441.0" AnchorPane.topAnchor="473.0" />
+            <Label layoutX="13.0" layoutY="319.0" prefHeight="35.0" prefWidth="90.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Last Name" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="319.0" />
+            <TextField fx:id="StudentLastName" layoutX="106.0" layoutY="319.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="106.0" AnchorPane.topAnchor="319.0" />
+            <Label layoutX="16.0" layoutY="473.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Gender" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="473.0" />
+            <Label layoutX="445.0" layoutY="327.0" prefHeight="35.0" prefWidth="158.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Parent's Last Name" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="278.0" AnchorPane.topAnchor="319.0" />
+            <TextField fx:id="ParentLastName" layoutX="571.0" layoutY="319.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="319.0" />
+            <Label layoutX="380.0" layoutY="413.0" prefHeight="35.0" prefWidth="83.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Email" AnchorPane.leftAnchor="441.0" AnchorPane.topAnchor="423.0" />
+            <TextField fx:id="ParentEmail" layoutX="571.0" layoutY="431.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="423.0" />
+            <DatePicker fx:id="studentBirthdate" layoutX="104.0" layoutY="523.0" prefWidth="231.0" AnchorPane.leftAnchor="106.0" />
+            <Label layoutX="18.0" layoutY="523.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Birthdate" />
+            <ComboBox fx:id="chooseRelation" layoutX="627.0" layoutY="476.0" onAction="#addRelationList" prefHeight="35.0" prefWidth="231.0" />
+            <ComboBox fx:id="chooseDepartment1" layoutX="108.0" layoutY="371.0" onAction="#addDepartmentList1" prefHeight="35.0" prefWidth="231.0" />
+            <ComboBox fx:id="chooseCourse" layoutX="108.0" layoutY="425.0" onAction="#addCourseList" prefHeight="35.0" prefWidth="231.0" />
+            <ComboBox fx:id="ChooseGender" layoutX="108.0" layoutY="476.0" onAction="#addStudentsGenderList" prefHeight="35.0" prefWidth="231.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ManageStaff1" layoutX="319.0" layoutY="59.0" prefHeight="661.0" prefWidth="382.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.leftAnchor="319.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <Label layoutX="14.0" layoutY="30.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="First name" AnchorPane.leftAnchor="9.0" />
+            <TextField fx:id="professor_firstname" layoutX="110.0" layoutY="30.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="41.0" />
+            <Label layoutX="34.0" layoutY="91.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Last Name" AnchorPane.leftAnchor="9.0" />
+            <TextField fx:id="professor_lastname" layoutX="110.0" layoutY="91.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.rightAnchor="41.0" />
+            <Button layoutX="26.0" layoutY="306.0" mnemonicParsing="false" onAction="#manageProfessorDelete" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Delete" AnchorPane.leftAnchor="26.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="update-button" />
+               </styleClass>
+            </Button>
+            <Button layoutX="207.0" layoutY="306.0" mnemonicParsing="false" onAction="#addProfessor" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Add" AnchorPane.rightAnchor="25.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="add-button" />
+               </styleClass>
+            </Button>
+            <ComboBox fx:id="chooseDepartment2" layoutX="108.0" layoutY="151.0" onAction="#addDepartmentList2" prefHeight="34.0" prefWidth="231.0" AnchorPane.rightAnchor="43.0" />
+            <ComboBox fx:id="chooseCourse2" layoutX="108.0" layoutY="203.0" onAction="#addCourseList2" prefHeight="34.0" prefWidth="231.0" AnchorPane.rightAnchor="43.0" />
+            <Label layoutX="9.0" layoutY="151.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Departments" AnchorPane.leftAnchor="9.0" />
+            <Label layoutX="11.0" layoutY="203.0" prefHeight="35.0" prefWidth="90.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Courses" AnchorPane.leftAnchor="9.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ManageStaff" layoutX="707.0" layoutY="59.0" prefHeight="662.0" prefWidth="473.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.topAnchor="59.0">
+         <children>
+            <TableView fx:id="profTableView" layoutX="9.0" layoutY="18.0" onMouseClicked="#manageProfessorsSelect" prefHeight="644.0" prefWidth="473.0" AnchorPane.topAnchor="16.0">
+              <columns>
+                <TableColumn fx:id="prof_first_name" prefWidth="128.0" text="First Name" />
+                <TableColumn fx:id="prof_last_name" minWidth="1.0" prefWidth="111.0" text="Last Name" />
+                  <TableColumn fx:id="prof_department" minWidth="1.0" prefWidth="111.0" text="Department" />
+                  <TableColumn fx:id="prof_course" minWidth="1.0" prefWidth="121.0" text="Course" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AvailibleCourse1" layoutX="330.0" layoutY="59.0" prefHeight="661.0" prefWidth="382.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="319.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <Label layoutX="26.0" layoutY="30.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Course" AnchorPane.leftAnchor="26.0" />
+            <TextField fx:id="courseField" layoutX="110.0" layoutY="30.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="120.0" />
+            <Label layoutX="30.0" layoutY="85.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Description" AnchorPane.leftAnchor="30.0" />
+            <TextField fx:id="descriptionField" layoutX="122.0" layoutY="85.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="120.0" />
+            <Button layoutX="205.0" layoutY="269.0" mnemonicParsing="false" onAction="#availableCourseAdd" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Add" AnchorPane.rightAnchor="27.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="add-button" />
+               </styleClass>
+            </Button>
+            <Button alignment="CENTER" layoutX="38.0" layoutY="269.0" mnemonicParsing="false" onAction="#availableCourseDelete" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Delete" AnchorPane.leftAnchor="38.0">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="delete-button" />
+               </styleClass>
+            </Button>
+            <Label layoutX="30.0" layoutY="144.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Department" AnchorPane.leftAnchor="30.0" />
+            <ComboBox fx:id="chooseDepartment" layoutX="124.0" layoutY="144.0" onAction="#addDepartmentList" prefHeight="35.0" prefWidth="231.0" AnchorPane.leftAnchor="120.0" />
+            <Label layoutX="32.0" layoutY="198.0" prefHeight="35.0" prefWidth="81.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Classroom" AnchorPane.leftAnchor="32.0" />
+            <ComboBox fx:id="chooseClassroom" layoutX="122.0" layoutY="198.0" onAction="#addClassroomList" prefHeight="35.0" prefWidth="231.0" AnchorPane.leftAnchor="120.0" />
+            <Label layoutX="28.0" layoutY="358.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Classroom" AnchorPane.leftAnchor="32.0" />
+            <TextField fx:id="TextFieldClassroom" layoutX="112.0" layoutY="358.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="120.0" />
+            <Label layoutX="32.0" layoutY="413.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Capacity" AnchorPane.leftAnchor="32.0" />
+            <TextField fx:id="TextFieldCapacity" layoutX="124.0" layoutY="413.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="120.0" />
+            <Label layoutX="30.0" layoutY="471.0" prefHeight="35.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Location" AnchorPane.leftAnchor="32.0" />
+            <TextField fx:id="TextFieldLocation" layoutX="122.0" layoutY="471.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="120.0" />
+            <Button layoutX="199.0" layoutY="536.0" mnemonicParsing="false" onAction="#availableClassroomAdd" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Add">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="add-button" />
+               </styleClass>
+            </Button>
+            <Button alignment="CENTER" layoutX="32.0" layoutY="536.0" mnemonicParsing="false" onAction="#availableClassroomDelete" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Delete">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="delete-button" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AvailibleCourse" layoutX="704.0" layoutY="55.0" prefHeight="661.0" prefWidth="492.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <TableView fx:id="availibleCourse_tableView" layoutX="9.0" layoutY="12.0" onMouseClicked="#availibleCourseSelect" prefHeight="310.0" prefWidth="473.0" AnchorPane.bottomAnchor="330.0">
+              <columns>
+                <TableColumn fx:id="col_course_course_name" prefWidth="113.0" text="Course" />
+                <TableColumn fx:id="col_course_description" minWidth="0.0" prefWidth="153.0" text="Description" />
+                  <TableColumn fx:id="col_course_department_name" minWidth="0.0" prefWidth="105.0" text="Department" />
+                  <TableColumn fx:id="col_course_classroom_name" minWidth="0.0" prefWidth="99.0" text="Classroom" />
+              </columns>
+            </TableView>
+            <TableView fx:id="addClassroom_tableView" layoutX="9.0" layoutY="338.0" onMouseClicked="#availibleClassroomSelect" prefHeight="310.0" prefWidth="473.0">
+              <columns>
+                <TableColumn fx:id="col_classroom_name" prefWidth="150.0" text="Classroom" />
+                  <TableColumn fx:id="col_capacity" prefWidth="150.0" text="Capacity" />
+                  <TableColumn fx:id="col_location" prefWidth="171.0" text="Location" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Payment" layoutX="319.0" layoutY="59.0" prefHeight="644.0" prefWidth="875.0" styleClass="dashboard-body" stylesheets="@CSSStyling/Landing.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <TableView fx:id="paymentTabelView" layoutX="5.0" layoutY="14.0" onMouseClicked="#paymentsSelect" prefHeight="310.0" prefWidth="872.0">
+              <columns>
+                <TableColumn fx:id="payment_student_id" prefWidth="75.0" text="Student ID" />
+                <TableColumn fx:id="payment_firstname" prefWidth="201.0" text="First Name" />
+                  <TableColumn fx:id="payment_lastname" prefWidth="169.0" text="Last Name" />
+                  <TableColumn fx:id="payment_payment_amount" prefWidth="183.0" text="Payment Amount" />
+                  <TableColumn fx:id="payment_payment_date" prefWidth="242.0" text="Payment Date" />
+              </columns>
+            </TableView>
+            <TextField fx:id="payment_student_firstname" layoutX="190.0" layoutY="380.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="190.0" />
+            <TextField fx:id="payment_student_lastname" layoutX="113.0" layoutY="434.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="434.0" />
+            <TextField fx:id="payment_payment_amountt" layoutX="571.0" layoutY="380.0" prefHeight="35.0" prefWidth="231.0" styleClass="search" stylesheets="@CSSStyling/Landing.css" AnchorPane.leftAnchor="571.0" />
+            <DatePicker fx:id="payment_payment_datte" layoutX="553.0" layoutY="447.0" prefWidth="231.0" AnchorPane.leftAnchor="571.0" AnchorPane.topAnchor="434.0" />
+            <Label layoutX="34.0" layoutY="386.0" styleClass="labels" stylesheets="@CSSStyling/Landing.css" text="Student First Name" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="48.0" layoutY="439.0" styleClass="labels" text="Student Last Name" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="439.0" />
+            <Label layoutX="441.0" layoutY="386.0" styleClass="labels" text="Payment Amount" AnchorPane.leftAnchor="441.0" />
+            <Label layoutX="427.0" layoutY="456.0" styleClass="labels" text="Payment Date" AnchorPane.leftAnchor="441.0" AnchorPane.topAnchor="439.0" />
+            <Button layoutX="488.0" layoutY="568.0" mnemonicParsing="false" onAction="#paymentAdd" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Add">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="add-button" />
+               </styleClass>
+            </Button>
+            <Button alignment="CENTER" layoutX="233.0" layoutY="568.0" mnemonicParsing="false" onAction="#paymentDelete" prefHeight="50.0" prefWidth="150.0" stylesheets="@CSSStyling/Landing.css" text="Delete">
+               <styleClass>
+                  <String fx:value="bottom-buttons" />
+                  <String fx:value="delete-button" />
+               </styleClass>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

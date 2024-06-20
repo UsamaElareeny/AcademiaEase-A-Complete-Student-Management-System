@@ -1,0 +1,303 @@
+.root {
+    -fx-background-color: #2A3542;
+    -fx-border-radius: 10px;
+    -fx-background-radius:10px;
+}
+.top-form{
+    -fx-background-color: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.left-form{
+    -fx-background-color: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-border-width: 2px;
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+    -fx-border-color: #E9ECEF;
+}
+.dashboard-body{
+    -fx-background-color: #E9ECEF;
+    -fx-border-width: 2px;
+    -fx-border-radius:20px;
+    -fx-background-radius:20px;
+    -fx-border-color: #E9ECEF;
+}
+.academiaease{
+    -fx-font-family:"Comic Sans MS";
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
+.welcome-label{
+    -fx-font-family:"Comic Sans MS";
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+.close-button{
+    -fx-font-family:"Comic Sans MS";
+    -fx-cursor:hand;
+    -fx-font-weight:bold;
+    -fx-font-size:20px;
+    -fx-text-fill:#FFF;
+    -fx-background-color:transparent;
+    -fx-border-color:#FFF;
+    -fx-border-width:.5px;
+    -fx-border-radius:50%;
+}
+.close-button:hover{
+    -fx-opacity:0.5;
+    -fx-border-color:#FF0000;
+    -fx-border-width:2px;
+    -fx-text-fill:#FF0000;
+}
+.min-button{
+    -fx-font-family:"Comic Sans MS";
+    -fx-cursor:hand;
+    -fx-font-weight:bold;
+    -fx-font-size:20px;
+    -fx-text-fill:#FFF;
+    -fx-background-color:transparent;
+    -fx-border-color:#FFF;
+    -fx-border-width:.5px;
+    -fx-border-radius:50%;
+}
+.min-button:hover{
+    -fx-opacity:0.5;
+}
+.left-form-buttons{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: transparent;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-border-color:#FFF;
+    -fx-border-width:1.5px;
+    -fx-background-radius: 10px;
+    -fx-border-radius:10px;
+    -fx-font-weight: bold;
+}
+.left-form-buttons:hover{
+    -fx-border-radius:10px;
+    -fx-background-color: #FB7E6D;
+}
+.first-card{
+    -fx-background-color: #FB7E6D;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.second-card{
+    -fx-background-color: #9261C6;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.third-card{
+    -fx-background-color: #1BB99A;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.fourth-card{
+    -fx-background-color: #EE4D6A;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.fifth-card{
+    -fx-background-color: #00BFEC;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.sixth-card{
+    -fx-background-color: #042c39;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px 50px 50px 50px;
+    -fx-font-weight: bold;
+}
+.first-card:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+.second-card:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+.third-card:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+.fourth-card:hover{
+     -fx-cursor: hand;
+     -fx-opacity: 0.8;
+ }
+.fifth-card:hover{
+      -fx-cursor: hand;
+      -fx-opacity: 0.8;
+}
+.sixth-card:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+.search{
+    -fx-font-family:"Comic Sans MS";
+    -fx-prompt-text-fill:#2A3542;
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#2A3542;
+    -fx-border-width:1px;
+    -fx-border-radius:25px;
+    -fx-text-fill:#2A3542;
+}
+.search:focused{
+    -fx-border-width:2px;
+    -fx-padding: 0px 0px 0px 30px;
+}
+.table-view{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-padding: 0px;
+    -fx-border-color:#2A3542;
+    -fx-border-width:2px;
+    -fx-border-radius:8px;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #2A3542;
+    -fx-font-weight: bold;
+}
+.table-view .table-column{
+    -fx-alignment: center;
+    -fx-text-fill:#2A3542;
+}
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+    -fx-border-radius: 8px 8px 8px 8px;
+    -fx-background-inset: 0 0 0 0;
+    -fx-text-fill:#2A3542;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+    -fx-text-fill:#2A3542;
+}
+.table-view .column-header:hover{
+    -fx-opacity: 0.6;
+    -fx-cursor: hand;
+}
+.bottom-buttons{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: transparent;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-text-fill: #2A3542;
+    -fx-alignment: center;
+    -fx-background-radius: 35px;
+    -fx-font-weight: bold;
+}
+.bottom-buttons:hover{
+    -fx-opacity: 0.8;
+}
+.clear-button{
+    -fx-background-color: #EE4D6A;
+}
+.update-button{
+    -fx-background-color:  #9261C6;
+}
+.add-button{
+    -fx-background-color: #1BB99A;
+}
+.delete-button{
+    -fx-background-color: #FB7E6D;
+}
+.insert-button{
+    -fx-text-fill: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-underline: true;
+}
+.insert-button:hover{
+    -fx-cursor:hand;
+ }
+.image-frame{
+    -fx-border-color:#2A3542;
+    -fx-border-width:1px;
+    -fx-border-radius:5px;
+}
+.combo-box{
+    -fx-mark-color: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#2A3542;
+    -fx-border-width:1px;
+    -fx-border-radius:25px;
+    -fx-text-fill:#2A3542;
+}
+.choice-box > .label{
+    -fx-text-fill: #2A3542;
+}
+.choice-box .context-menu {
+    -fx-background-color: transparent;
+}
+.choice-box .menu-item:focused {
+    -fx-opacity: 0.8;
+}
+.choice-box .menu-item > .label {
+    -fx-text-fill: #2A3542;
+}
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill:#2A3542;
+}
+.date-picker{
+    -fx-mark-color: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#2A3542;
+    -fx-border-width:1px;
+    -fx-border-radius:25px;
+    -fx-text-fill:white;
+}
+.date-picker:focused{
+    -fx-opacity: 0.8;
+}
+.calendar-grid {
+    -fx-background-color: tranparent;
+    -fx-text-fill: #2A3542;
+    -fx-background-radius: 2px;
+    -fx-border-width: 1px;
+    -fx-border-color: #2A3542;
+}
+.date-picker > .text-field {
+    -fx-right-padding: 3px;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-base: #2A3542 ;
+    -fx-mark-highlight-color: -fx-light-text-color;
+}
+.labels{
+    -fx-text-fill: #2A3542;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+}

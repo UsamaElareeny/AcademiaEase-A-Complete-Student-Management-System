@@ -1,0 +1,90 @@
+.root {
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.left{
+    -fx-background-color: #2A3542;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.right{
+    -fx-background-color: #E9ECEF;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.field{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: transparent;
+    -fx-text-fill: #E9ECEF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #E9ECEF;
+}
+.login-button{
+    -fx-cursor:hand;
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#E9ECEF;
+    -fx-border-width:.5px;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.login-button:hover{
+    -fx-opacity:0.5;
+}
+.close-button{
+    -fx-font-family:"Comic Sans MS";
+    -fx-cursor:hand;
+    -fx-font-weight:bold;
+    -fx-font-size:20px;
+    -fx-text-fill:#2A3542;
+    -fx-background-color:transparent;
+    -fx-border-color:#2A3542;
+    -fx-border-width:.5px;
+    -fx-border-radius:50%;
+
+}
+.close-button:hover{
+    -fx-opacity:0.5;
+    -fx-border-color:#FF0000;
+    -fx-border-width:2px;
+    -fx-text-fill:#FF0000;
+}
+.register{
+    -fx-font-family:"Comic Sans MS";
+    -fx-text-fill:#2A3542;
+}
+.field1{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: transparent;
+    -fx-text-fill: #2A3542;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #2A3542;
+}
+.field2{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: transparent;
+    -fx-text-fill: #2A3542;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.register-button{
+    -fx-cursor:hand;
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#2A3542;
+    -fx-text-fill: #2A3542;
+    -fx-border-width:.5px;
+    -fx-border-radius:25px;
+    -fx-background-radius:25px;
+}
+.register-button:hover{
+    -fx-opacity:0.5;
+}

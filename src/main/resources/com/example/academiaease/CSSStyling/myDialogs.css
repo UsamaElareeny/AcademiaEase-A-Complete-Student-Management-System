@@ -1,0 +1,51 @@
+.dialog-pane{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: #2A3542;
+    -fx-border-color:#E9ECEF;
+    -fx-border-width:2.0px;
+    -fx-border-radius:2px;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 160px;
+}
+.dialog-pane > *.button-bar > *.container {
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: #2A3542;
+}
+.dialog-pane > .content.label {
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: #2A3542;
+    -fx-text-fill:#E9ECEF;
+    -fx-font-size:15.0px;
+}
+.dialog-pane:header .header-panel {
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: #2A3542;
+    -fx-font-weight: bold;
+}
+.dialog-pane:header .header-panel .label{
+    -fx-background-color: #2A3542;
+    -fx-background-radius:5px;
+    -fx-text-fill:#E9ECEF;
+    -fx-font-size:15.0px;
+}
+.dialog-pane:header .header-panel .label{
+    -fx-font-family:"Comic Sans MS";
+    -fx-background-color: #2A3542;
+    -fx-background-radius:10px;
+    -fx-text-fill:#E9ECEF;
+    -fx-font-size:15.0px;
+}
+.dialog-pane .button{
+    -fx-font-family:"Comic Sans MS";
+    -fx-cursor:hand;
+    -fx-text-fill:#E9ECEF;
+    -fx-background-color:#2A3542;
+    -fx-font-weight:bold;
+    -fx-font-size: 15px;
+    -fx-border-color:#E9ECEF;
+    -fx-border-width:.5px;
+    -fx-border-radius:5px;
+}
+.dialog-pane .button:hover{
+    -fx-opacity:0.5;
+}
