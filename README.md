@@ -2,6 +2,14 @@
 **VERSION 2.0 IS COMMING SOON**
 ## Description
 AcademiaEase is an innovative management system designed to streamline the administration of students, courses, and professors within academic institutions. Developed to address the complexities and inefficiencies inherent in traditional educational management systems, AcademiaEase provides a comprehensive, user-friendly solution tailored to meet the needs of modern educational environments. AcademiaEase represents a significant step forward in academic management systems, offering a blend of functionality, reliability, and ease of use. **REFERE BACK TO THE DOCUMENTATION ATTACHED ABOVE FOR MORE INFORMATION**
+![Image 1](Media/Image1.jpg)
+![Image 2](Media/Image2.jpg)
+![Image 3](Media/Image3.jpg)
+![Image 4](Media/Image4.jpg)
+![Image 5](Media/Image5.jpg)
+![Image 6](Media/Image6.jpg)
+![Image 7](Media/Image7.jpg)
+
 ## Table of Content
 1. [Installation](#installation)
 2. [License](#license)
